@@ -1,0 +1,359 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 700px */
+@media (min-width: 700px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5rem; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "Open Sans", serif;
+  color: #000;
+  background-color: #FAFAFA; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4 { margin: 0; }
+h2, h3, h4 { font-weight: 400; font-family:'Ubuntu', sans-serif; letter-spacing: 0.1em; }
+h1 { font-size: 3.0rem; font-weight: 700; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
+
+p { margin-top: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a { color: #000; text-decoration: none; border-bottom: 1px solid #000; }
+a:hover { color: #ccc; border-bottom: 1px solid #ccc; cursor: pointer;}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #000; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+/* Author */
+.wf-loading p, .wf-loading h1, .wf-loading h2, .wf-loading h3 { visibility: hidden }
+
+/* Row 1 */
+  .zoning-maps, .project-link.zoning-maps:hover { background-color: #FA8072; }
+.large-format, .project-link.large-format:hover { background-color: #FA8072; }
+.philadelphia, .project-link.philadelphia:hover { background-color: #778899; }
+
+/* Row 2 */
+.location-history, .project-link.location-history:hover { background-color: #778899; }
+.three-d-buildings, .project-link.three-d-buildings:hover{background-color: #778899}
+.traffic-lights, .project-link.traffic-lights:hover { background-color: #778899; }
+
+/* Row 3 */
+.find-playgrounds, .project-link.find-playgrounds:hover { background-color: #EB8D31; }
+.medium-density-location, .project-link.medium-density-location:hover{background-color: #EB8D31;}
+.point-cloud, .project-link.point-cloud:hover{background-color: #C4E86C}
+
+/* Row 4 */
+.digitizing-map, .project-link.digitizing-map:hover { background-color: #FA8072; }
+.topo-audit, .project-link.topo-audit:hover{background-color: #EB8D31}
+.three-d-maps, .project-link.three-d-maps:hover{background-color: #C4E86C}
+
+.project-link { padding: 2rem 0; background-color: #FAFAFA; }
+.project-link:hover { color: #fff; background-color: #000; margin: 0 auto; }
+
+em { font-style: normal; font-weight: 700; letter-spacing: 0.02rem; }
+.spaced { margin-top: 5rem; margin-bottom: 8rem; }
+.shadowed { -webkit-filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.1)); filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.1)); }
+.centered { text-align: center; }
+.max-50 { max-width: 50%; margin-left: 20%; }
+@media (min-width: 700px) { .max-50 { max-width: 100%; margin-left: 0; } }
+.white { color: #FAFAFA; }
+.large { font-size: 2.0rem; }
+.vertical-rule { height: 20rem; width: 1px; background-color: #000; margin: 5rem auto 5rem auto; }
+
+.index-projects .columns { margin-top: 2%; margin-bottom: 2%; }
+.index-projects a .project-link { overflow: hidden; background-color: #fff; position: relative; padding: 2rem; border: 1px #fff solid; min-height: 170px; }
+.index-projects a .project-link img { visibility: hidden; opacity: 1; position: absolute; width: 70%; left: 15%; top: 65%; z-index: -999; }
+.index-projects a .project-link h4 { visibility: hidden; position: absolute; bottom: 0px; left: 0px; background-color: #fafafa; color: #000; border-top: 1px solid #000; border-right: 1px solid #000;padding-right: 0.5rem;padding-left: 0.5rem; }
+.index-projects a:hover { -webkit-filter: none; filter: none; }
+.index-projects a:hover .project-link img { visibility: visible; top: 50%; transition: 0.35s; -webkit-transition: 0.35s }
+.index-projects a:hover .project-link h4 { visibility: visible; }
+.index-projects a:hover .project-link p { color: #000; }
+.index-projects a:hover .project-link { border: 1px #000 solid; -webkit-filter: drop-shadow(0 0 0 rgba(0,0,0,0)); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+.index-projects a, .footer-project-links a, .index-projects a:hover, footer .footer-project-links a:hover, nav a, nav a:hover { border: none; }
+
+.index-intro { margin-top: 3rem; }
+.index-bio { margin-top: 10rem; }
+@media (min-width: 700px) { .index-intro { margin-top: 10rem; } }
+.index-bio img {     display: block;
+    /* margin: auto; */
+    margin-bottom: 3rem;
+    /* border-radius: 5px; */
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;}
+.index-bio p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.05rem;
+}
+
+@media (min-width: 700px) { .project-intro { margin: 4rem; } }
+.project-intro { margin-top: 4rem; }
+.project-intro .splash { padding: 5rem 0 20rem 0; }
+.project-intro img {position: relative; top: -15rem; margin-bottom: -15rem; }
+.project-intro h1 { text-align: center; color: #FAFAFA; margin-bottom: 2rem; }
+
+.project-content p {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-family: "Open Sans", serif;
+  color: #777;
+  background-color: #FAFAFA;
+  margin: 10px 10px 10px 0px;}
+
+.project-content hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-width: 0;
+    border-top: 1px solid #eee; }
+
+.project-content img {
+    display: block;
+    margin: auto;
+    max-height: 350px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0.1px solid #c0c0c0;
+    }
+
+.resume h4 { margin-bottom: 1.0rem; }
+.resume p {line-height: 2;}
+
+footer .footer-contact { margin-top: 5rem; margin-left: 0;}
+footer .footer-contact a, footer .footer-contact span { border: none; color: #ccc; }
+footer .footer-contact a:hover { border: none; color: #000; }
+
+.resume #expand { margin-top: 2rem; padding: 0 7%; background-color: #fff; }
+input { display: none; visibility: hidden; }
+label h3::after { content: "+"; }
+#expand { max-height: 0; overflow: hidden; transition: max-height 0.7s; -webkit-transition: max-height 0.7s; }
+#toggle:checked ~ #expand { max-height: 3000px; }
+#toggle:checked ~ label h3::after { content: "-"; }
