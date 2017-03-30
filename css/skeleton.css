@@ -251,15 +251,20 @@ there.
 /* Author */
 .wf-loading p, .wf-loading h1, .wf-loading h2, .wf-loading h3 { visibility: hidden }
 
+/* Row 0 */
+.google-analytics, .project-link.google-analytics:hover { background-color: #33adff; }
+.dallas-shooting, .project-link.dallas-shooting:hover { background-color: #33adff; }
+.co2-emission, .project-link.co2-emission:hover { background-color: #33adff; }
+
 /* Row 1 */
-  .zoning-maps, .project-link.zoning-maps:hover { background-color: #FA8072; }
+.zoning-maps, .project-link.zoning-maps:hover { background-color: #FA8072; }
 .large-format, .project-link.large-format:hover { background-color: #FA8072; }
-.philadelphia, .project-link.philadelphia:hover { background-color: #778899; }
+.philadelphia, .project-link.philadelphia:hover { background-color: #33adff; }
 
 /* Row 2 */
-.location-history, .project-link.location-history:hover { background-color: #778899; }
-.three-d-buildings, .project-link.three-d-buildings:hover{background-color: #778899}
-.traffic-lights, .project-link.traffic-lights:hover { background-color: #778899; }
+.location-history, .project-link.location-history:hover { background-color: #33adff; }
+.three-d-buildings, .project-link.three-d-buildings:hover{background-color: #33adff}
+.traffic-lights, .project-link.traffic-lights:hover { background-color: #33adff; }
 
 /* Row 3 */
 .find-playgrounds, .project-link.find-playgrounds:hover { background-color: #EB8D31; }
@@ -285,7 +290,7 @@ em { font-style: normal; font-weight: 700; letter-spacing: 0.02rem; }
 .vertical-rule { height: 20rem; width: 1px; background-color: #000; margin: 5rem auto 5rem auto; }
 
 .index-projects .columns { margin-top: 2%; margin-bottom: 2%; }
-.index-projects a .project-link { overflow: hidden; background-color: #fff; position: relative; padding: 2rem; border: 1px #fff solid; min-height: 170px; }
+.index-projects a .project-link { overflow: hidden; background-color: #fff; position: relative; padding: 2rem; border: 1px #fff solid; min-height: 170px; font-size: 1.3rem;}
 .index-projects a .project-link img { visibility: hidden; opacity: 1; position: absolute; width: 70%; left: 15%; top: 65%; z-index: -999; }
 .index-projects a .project-link h4 { visibility: hidden; position: absolute; bottom: 0px; left: 0px; background-color: #fafafa; color: #000; border-top: 1px solid #000; border-right: 1px solid #000;padding-right: 0.5rem;padding-left: 0.5rem; }
 .index-projects a:hover { -webkit-filter: none; filter: none; }
@@ -296,6 +301,7 @@ em { font-style: normal; font-weight: 700; letter-spacing: 0.02rem; }
 .index-projects a, .footer-project-links a, .index-projects a:hover, footer .footer-project-links a:hover, nav a, nav a:hover { border: none; }
 
 .index-intro { margin-top: 3rem; }
+
 .index-bio { margin-top: 10rem; }
 @media (min-width: 700px) { .index-intro { margin-top: 10rem; } }
 .index-bio img {     display: block;
